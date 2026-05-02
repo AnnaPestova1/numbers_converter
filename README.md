@@ -13,7 +13,8 @@ __Project structure__
 
 - base_conversion.py holds functions to convert data
 - graphic.py contain code for tkinter graphic user interface. 
-- streamlit_number_converter.py contain code for streamlit deployment: 
+- streamlit_number_converter.py contain code for streamlit.
+- _Streamlit app deployed here:_ https://annapestova-number-converter.streamlit.app
 
 To run locally:
 - clone repository
