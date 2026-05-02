@@ -28,12 +28,9 @@ try:
         else:
             st.html(f"<div style='display: flex'><h1>{value}</h1><h2>10</h2><h1>=</h1><h1>{result}</h1><h2>{base}</h2></div>")
 
-
-
     st.set_page_config(page_title="Number Converter", page_icon=None, layout='wide', initial_sidebar_state="auto", menu_items=None)
     st.sidebar.header("Number Converter")
     form = st.sidebar.form("convert_form")
-    # with st.sidebar.form("convert_form"):
     convert_to_decimal = form.radio(
         "From base to decimal?",
         options= ["Yes", "No"],
@@ -42,20 +39,33 @@ try:
     )
 
     to_decimal = True if convert_to_decimal == "Yes" else False
-    print('convert_to_decimal', convert_to_decimal, "to_decimal", to_decimal)
 
     value = form.text_input("Enter value")
     base = form.selectbox("Select Base", (2, 8, 16)) 
 
-    print("value", value, "base", base)
     submitted = form.form_submit_button("Convert")
+
+    hint = "Pick conversion on the left" if not submitted else ""
+    st.text(hint)
+
+    result = ""
+
     if submitted:
-        result = ""
         if to_decimal == True:
             result = bc.to_decimal(base, value) 
         else:
             result = bc.to_base(base, value)
+ 
         show_results(result, to_decimal, base, value)
+  
+    def reset_form():
+        global submitted
+        submitted = False
+         
+        
+    if submitted:
+        st.button('Clear result', on_click=reset_form)
+
 
 except Exception as e:
-        st.toast(f"The error occur: {e}")
+    st.toast(f"The error occur: {e}", duration=10)
