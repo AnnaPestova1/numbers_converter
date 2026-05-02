@@ -35,13 +35,13 @@ _- conversion result_
 _- error message_
 ![error Tkinter GUI](image-2.png)
 
-**Steamlit screenshots:**
+**Streamlit screenshots:**
 
 _- main page_
-![default view Steamlit](image-3.png)
+![default view Streamlit](image-3.png)
 _- conversion result_
-![conversion Steamlit](image-4.png)
+![conversion Streamlit](image-4.png)
 _- error message_
-![error Steamlit](image-5.png)
+![error Streamlit](image-5.png)
 
 
