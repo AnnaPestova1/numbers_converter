@@ -2,7 +2,7 @@
 
 ## Final Project for CSC.221.40C Introduction to Problem Solving and Programming course.
 
-This application allows to convert numbers from base 10 to bases 2, 8, 16 and vice versa. 
+This application allows to convert numbers from decimal number system (base 10) to binary (base2), octal (base 8), and hexadecimal (base 16) numbers, and vice versa. 
 
 The functions to convert to decimal and to bases 2, 8, and 16 are in base_conversion.py file.
 

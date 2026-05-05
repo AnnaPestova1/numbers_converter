@@ -5,15 +5,16 @@ This is a Final Project for CSC.221.40C Introduction to Problem Solving and Prog
 
 Problem statement:
 
-This application allows to convert numbers from base 10 to bases 2, 8, 16 and vice versa. 
+This application allows to convert numbers from decimal number system (base 10) to binary (base2), octal (base 8), 
+and hexadecimal (base 16) numbers, and vice versa. 
 
 The functions to convert to decimal and to bases 2, 8, and 16 are in base_conversion.py file.
 
 The goal was to implement this conversion using custom function with additional error handling.
 
-This file contains code to test functionality via terminal (lines 22-30) - need to uncomment the code (and comment out all other code)
+This file contains code to test functionality via terminal (lines 23-31) - need to uncomment the code (and comment out all other code)
 
-Starting with the line 33 - it is the GUI support. 
+Starting with the line 34 - it is the GUI support. 
 
 For GUI I selected tkinter library.'''
 
