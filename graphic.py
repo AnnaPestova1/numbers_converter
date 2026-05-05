@@ -120,7 +120,7 @@ def reset():
    base_var.set(2)
 
 # reset form
-tk.Button(mainframe, text="Reset window", font=button_font, padx=5, pady=5).grid(column=2, row=12, pady=(10,10))
+tk.Button(mainframe, text="Reset window", command=reset, font=button_font, padx=5, pady=5).grid(column=2, row=12, pady=(10,10))
 
 
 root.mainloop()
